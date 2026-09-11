@@ -27,7 +27,7 @@
 
 ## サムネイル
 
-`assets/images/thumbnail-source/<category>/` に生活シーン画像を入れると、ビルド時に記事タイトル入りWebPを生成します。画像がない間はフォールバック画像が使われます。
+`assets/images/thumbnail-source/<category>/` に生活シーン画像を入れると、ビルド時に文字なし・高画質の写真サムネイルWebPを生成します。画像内にタイトルやロゴは焼き込みません。
 
 ## 入っているもの
 
