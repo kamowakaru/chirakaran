@@ -41,6 +41,9 @@ def md_to_html(md):
         if in_ol: out.append('</ol>'); in_ol=False
     for line in lines:
         if not line.strip(): fp(); cl(); continue
+        m=re.match(r'^!\[([^]]*)\]\(([^)]+)\)$', line.strip())
+        if m:
+            fp(); cl(); alt,url=m.group(1),m.group(2); out.append(f'<figure class="article-scene"><img src="{html.escape(url, quote=True)}" alt="{html.escape(alt)}" loading="lazy"><figcaption>{html.escape(alt)}</figcaption></figure>'); continue
         m=re.match(r'^(#{2,4})\s+(.+)$',line)
         if m:
             fp(); cl(); n=len(m.group(1)); title=m.group(2).strip(); out.append(f'<h{n}>{inline(title)}</h{n}>'); continue
