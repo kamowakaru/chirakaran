@@ -5,3 +5,10 @@
 
 /* Article lifestyle scenes */
 .article-scene{margin:24px 0 30px}.article-scene img{display:block;width:100%;max-height:430px;object-fit:cover;border-radius:16px;box-shadow:0 8px 24px rgba(39,55,42,.08)}.article-scene figcaption{font-size:12px;color:#7b8379;margin-top:7px}.article-thumb{aspect-ratio:1200/630;object-fit:cover;border-radius:18px}
+
+/* v4: photo-first visual system */
+.brand-house{width:27px;height:27px;display:block}.brand-mark{color:#536d49}
+.hero-photo-panel{padding:0;overflow:hidden;min-height:280px}.hero-photo-panel img{display:block;width:100%;height:100%;min-height:280px;object-fit:cover}
+.thumb{height:170px;background:#eef0e8}.thumb img{image-rendering:auto}
+.article-thumb,.article-scene img{image-rendering:auto}
+@media(max-width:700px){.hero-photo-panel{margin-top:22px;min-height:220px}.hero-photo-panel img{min-height:220px}}
