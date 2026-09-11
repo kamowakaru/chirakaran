@@ -19,3 +19,73 @@
 .brand-mark{background:none!important;border:0!important;border-radius:0!important;box-shadow:none!important;width:32px!important;height:32px!important;padding:0!important;color:#536d49!important}
 .brand-house{width:32px!important;height:32px!important}
 @media(max-width:700px){.chirakaran-hero .hero-grid{display:block;min-height:0}.hero-photo-panel{margin:0 -14px 18px!important;min-height:260px!important}.hero-photo-panel img{width:112%!important;height:280px!important;min-height:280px!important;margin-left:-6%;-webkit-mask-image:radial-gradient(ellipse 82% 72% at 50% 50%,#000 52%,rgba(0,0,0,.88) 67%,rgba(0,0,0,.4) 82%,transparent 100%);mask-image:radial-gradient(ellipse 82% 72% at 50% 50%,#000 52%,rgba(0,0,0,.88) 67%,rgba(0,0,0,.4) 82%,transparent 100%)}}
+
+/* v7: keep hero photo clear of search UI and dissolve its edges more strongly */
+.chirakaran-hero{position:relative;overflow:hidden}
+.chirakaran-hero .hero-grid{grid-template-columns:1fr 1fr;gap:28px;min-height:460px}
+.chirakaran-hero .hero-copy{position:relative;z-index:3}
+.hero-photo-panel{position:relative;z-index:1;margin-left:0!important;overflow:visible!important;min-width:0}
+.hero-photo-panel img{
+  width:100%!important;
+  max-width:100%!important;
+  height:420px!important;
+  min-height:420px!important;
+  object-fit:cover!important;
+  object-position:center!important;
+  -webkit-mask-image:radial-gradient(ellipse 68% 64% at 52% 50%,#000 34%,rgba(0,0,0,.96) 43%,rgba(0,0,0,.72) 55%,rgba(0,0,0,.34) 68%,rgba(0,0,0,.10) 80%,transparent 94%)!important;
+  mask-image:radial-gradient(ellipse 68% 64% at 52% 50%,#000 34%,rgba(0,0,0,.96) 43%,rgba(0,0,0,.72) 55%,rgba(0,0,0,.34) 68%,rgba(0,0,0,.10) 80%,transparent 94%)!important;
+}
+@media(max-width:980px){
+  .chirakaran-hero .hero-grid{grid-template-columns:1.05fr .95fr;gap:16px}
+  .hero-photo-panel img{height:380px!important;min-height:380px!important}
+}
+@media(max-width:700px){
+  .chirakaran-hero .hero-grid{display:block;min-height:0}
+  .hero-photo-panel{margin:0 -14px 18px!important;min-height:260px!important}
+  .hero-photo-panel img{width:100%!important;max-width:100%!important;height:280px!important;min-height:280px!important;margin-left:0!important;-webkit-mask-image:radial-gradient(ellipse 72% 66% at 50% 50%,#000 32%,rgba(0,0,0,.94) 44%,rgba(0,0,0,.68) 57%,rgba(0,0,0,.30) 70%,rgba(0,0,0,.08) 82%,transparent 96%)!important;mask-image:radial-gradient(ellipse 72% 66% at 50% 50%,#000 32%,rgba(0,0,0,.94) 44%,rgba(0,0,0,.68) 57%,rgba(0,0,0,.30) 70%,rgba(0,0,0,.08) 82%,transparent 96%)!important}
+}
+
+
+/* v8: secondary pages use the same warm cream palette and header branding as TOP */
+.page-hero{
+  background:linear-gradient(180deg,#f3f0df 0%,#f8f7ef 72%,#fff 100%)!important;
+  border-bottom:1px solid #eee9d8;
+}
+.page-hero h1{color:#3d4b39}
+.breadcrumb{color:#7b806e}
+.article-main{background:#faf9f3!important}
+.section.soft{background:#fbfaf4!important}
+.footer{background:#faf9f3!important;border-top-color:#e8e3d3!important}
+.site-header{border-bottom-color:#eee9d8!important}
+.header-search{border-color:#ddd9ca!important;background:#fffdfa!important}
+.menu-btn{background:#f2f0e3!important;color:#536d49}
+.brand.text-brand .brand-mark{background:transparent!important}
+.brand.text-brand .brand-house{color:#536d49!important}
+
+/* v9: align the hero's right edge with every section below */
+.chirakaran-hero > .container{
+  width:min(1180px,calc(100% - 40px));
+  margin-left:auto;
+  margin-right:auto;
+  overflow:hidden;
+}
+.chirakaran-hero .hero-grid{
+  width:100%;
+  max-width:100%;
+}
+.chirakaran-hero .hero-photo-panel{
+  width:100%;
+  max-width:100%;
+  justify-self:stretch;
+  overflow:hidden!important;
+}
+.chirakaran-hero .hero-photo-panel img{
+  width:100%!important;
+  max-width:100%!important;
+  margin-left:0!important;
+  margin-right:0!important;
+}
+@media(max-width:700px){
+  .chirakaran-hero > .container{width:min(100% - 28px,1180px)}
+  .chirakaran-hero .hero-photo-panel{margin-left:0!important;margin-right:0!important}
+}
