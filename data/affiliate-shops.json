@@ -1,0 +1,26 @@
+{
+  "disclosure": "当サイトはアフィリエイト広告を利用しています。",
+  "shops": [
+    {
+      "id": "rakuten",
+      "name": "楽天市場",
+      "enabled": false,
+      "url_template": "",
+      "note": "楽天アフィリエイトのリンク形式が決まったら設定"
+    },
+    {
+      "id": "amazon",
+      "name": "Amazon",
+      "enabled": false,
+      "url_template": "",
+      "note": "Amazonアソシエイト利用開始後に設定"
+    },
+    {
+      "id": "yahoo",
+      "name": "Yahoo!ショッピング",
+      "enabled": false,
+      "url_template": "",
+      "note": "Yahoo!ショッピングのアフィリエイト設定後に設定"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+[
+  {"slug":"tidy","name":"片付けラク","icon":"🧺","description":"散らかり・収納・定位置をラクに"},
+  {"slug":"clean","name":"掃除ラク","icon":"🧹","description":"掃除の回数と手間を減らす"},
+  {"slug":"laundry","name":"洗濯ラク","icon":"👕","description":"洗う・干す・しまうをラクに"},
+  {"slug":"kitchen","name":"キッチンラク","icon":"🍳","description":"調理・洗い物・補充をラクに"},
+  {"slug":"bathroom","name":"お風呂・洗面ラク","icon":"🛁","description":"詰め替え・ヌメリ・身支度をラクに"},
+  {"slug":"living","name":"暮らしラク","icon":"🏠","description":"名もなき家事と日用品管理をラクに"}
+]
